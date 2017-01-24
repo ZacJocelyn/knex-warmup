@@ -1,7 +1,7 @@
 
 exports.seed = function(knex, Promise) {
   // Deletes ALL existing entries
-  return knex.raw('delete from "probe"; alter sequence user_id_seq restart with 6')
+  return knex.raw('delete from "probe"; alter sequence probe_id_seq restart with 6')
     .then(function () {
       const probes = [{
         id: 1,
